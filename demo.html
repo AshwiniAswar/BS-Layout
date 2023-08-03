@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="demo.css">
+    <title> Layout-1 </title>
+
+</head>
+
+<body>
+  <!-- Start --> 
+
+  <div class="sidebar-sticky pt-3">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> --> 
+         Contact<span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg> -->
+          Company
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> -->
+         Fleet
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          Services
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- <-- end --> 
+   
+    <div class="container">
+      <div class="col-12">
+        <table class="table ">
+            <thead >
+              <tr>
+                <th scope="col">Trailer Service Type</th>
+                <th scope="col">Capacity(In Gallons)</th>
+                <th scope="col">Does Trailer has Pump?</th>
+                <th scope="col">Is Trailer Metered?</th>
+                <th scope="col">Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">FTL</th>
+                <td>3000</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">LTL</th>
+                <td>4500</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <th scope="row">LTL</th>
+                <td>4500</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>9</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+    <div class="container">
+          <table class="table  table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">Trailer Service Type</th>
+                <th scope="col">Capacity(In Gallons)</th>
+                <th scope="col">Does Trailer has Pump?</th>
+                <th scope="col">Is Trailer Metered?</th>
+                <th scope="col">Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Box Trunk</th>
+                <td>3000</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">Tank Wagon</th>
+                <td>4500</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <th scope="row">LTL</th>
+                <td>4500</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>9</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+  <div class="container">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-sm-4">
+          <label for="inputEmail4">Name</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputType">Type</label>
+          <select id="inputType" class="form-control">
+            <option selected>Choose...</option>
+            <option>Carrier</option>
+            <option>Education</option>
+            <option>Field</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+      
+          <div class="form-group col-sm-4">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>Maharashtra</option>
+            <option>Pune</option>
+            <option>North Carolina</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputCountry">Country</label>
+          <select id="inputCountry" class="form-control">
+            <option selected>Choose...</option>
+            <option>Canada</option>
+            <option>India</option>
+            <option>USA</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputType">Type</label>
+          <select id="inputType" class="form-control">
+            <option selected>Choose...</option>
+            <option>Office</option>
+            <option>Company</option>
+          </select>
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="inputphone">Phone</label>
+          <input type="phone" class="form-control" id="inputphone">
+        </div>
+                   
+      </div>
+      <div  class="btn float-right">
+        <button type="submit"  class="btn btn-secondary ">Finish & Save</button>
+        <button type="submit" class="btn btn-primary ">Next</button>
+      </div>
+    </form>
+  </div>
+
+
+
+  <div class="container">
+    <div col-sm-12>
+      <h5>Service Offerings</h5>
+      <p>Please list Market footprint per service offering</p>
+    </div>
+    <div class="radio" co-sm-12>
+      <h5>Do you offer FTL Delieveries</h5>
+      <div class="form-check">
+        <input class="form-check-input float-right" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Yes
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input float-right"  type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          No
+        </label>
+      </div>
+    </div>
+      <div class="row">
+        <div class="form-group col-md-4">
+          <label for="inputZipCode">Select Location by Zip-Code</label>
+            <select id="inputZipCode" class="form-control">
+              <option selected>Choose...</option>
+              <option>Canada</option>
+              <option>India</option>
+              <option>USA</option>
+            </select>
+          </div>
+      
+        <div class="form-group col-md-4">
+          <label for="inputCity">City</label>
+          <select id="inputCity" class="form-control">
+            <option selected>Choose...</option>
+            <option>Pune</option>
+            <option>Mumbai</option>
+            <option>Nashik</option>
+          </select>
+        </div>    
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Select All
+          </label>
+        </div>
+      </div>
+      <div class="btn float-right">
+        <button type="submit"  class="btn btn-secondary btn-lg active ">Save</button>
+        <button type="submit" class="btn btn-primary btn-lg active ">Next</button>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
