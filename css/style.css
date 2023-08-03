@@ -1,26 +1,9 @@
-/* .btn{
+.btn{
 	width: 100px;
 	height: 40px;
 	border-radius: 20px;
-} */
-/* body{
-	background-image: url('../images/curve.png');
-	background-repeat: no-repeat;
-	background-position: right;
-	border: 5px solid black;
-	border-top: 10px ;
-	box-shadow:0 0 50px rgba(126, 90, 246, 0.2);
-
-
 }
-.container{
-	margin: 0 auto;
-	/* width: 1000px; */
-	/* box-shadow:0 0 50px rgba(0,0,0,0.20);
-	margin-top: 150px;
-	border-radius: 20px;
-	padding: 30px 30px;
-} */ 
+
 body{
 	border-top: 10px solid blue;
 	background-image: url('../images/curve.png');
@@ -32,7 +15,7 @@ body{
 .container{
 	margin: 0 auto;
 	width: 1300px;
-	margin-top: 200px;
+	margin-top: 100px;
 	/* border: 1px solid black; */
 	border-radius: 10px;
 	box-shadow:0 0 50px rgba(0,0,0,0.20);
