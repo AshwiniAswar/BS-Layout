@@ -13,62 +13,89 @@
 </head>
 
 <body>
-  <div class="container pt-10">
+  <div class="container border shadow bg-rounded  mt-5 pt-2 ">
+      <div class="row">
+        <div class="col-sm-10">
+          <div class="card-body">
+          <h5>Service Offering</h5>
+          <p>Please list Market footprint per service offering</p> 
+        </div>
+        <div class="radio col-sm-12">
+          <h5><small>Do you offer FTL Delieveries</small></h5>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1">Yes</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">No</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group ml-3 mt-3 col-sm-4">
+            <label for="inputZipCode" id="validationTextarea">Select Location by Zip-Code</label>
+              <select id="inputZipCode" class="form-control">
+                <option selected></option>
+                <option>Canada</option>
+                <option>India</option>
+                <option>USA</option>
+              </select>
+            </div>
+        
+          <div class="form-group col-sm-3 mt-3">
+            <label for="inputCity " id="validationTextarea">City</label>
+            <select id="inputCity" class="form-control">
+              <option selected>Select City(s)</option>
+              <option>Pune</option>
+              <option>Mumbai</option>
+              <option>Nashik</option>
+            </select>
+          </div>    
+        </div>
+        <div class="custom-control custom-checkbox pl-5 pb-5">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Select All</label>
+        </div>
+      </div>  
+    </div>  
+    <div class="row float-right form-inline mt-4 ">
+      <div class="col">
+        
+          <button type="button" class="btn btn-secondary btn-sm rounded-pill font-wait:bold mr-3 nextBtnW" disabled> Save</button>
+          <button type="submit" class="btn btn-primary btn-sm rounded-pill font-wait:bold nextBtnW" disabled>Next</button>
+        
+     </div> 
+  </div>
+ 
+     
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="container pt-3 pb-4">
     <div col-sm-12>
       <h5>Service Offerings</h5>
       <p>Please list Market footprint per service offering</p>
     </div>
     <div class="radio" co-sm-12>
       <h5>Do you offer FTL Delieveries</h5>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input float-right" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-        <label class="form-check-label" for="gridRadios1">
-          Yes
-        </label>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline1">Yes</label>
       </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input float-right"  type="radio" name="gridRadios" id="gridRadios2" value="option2">
-        <label class="form-check-label" for="gridRadios2">
-          No
-        </label>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline2">No</label>
       </div>
     </div>
-    <div class="row">
-      <div class="form-group col-sm-4">
-        <label for="inputZipCode">Select Location by Zip-Code</label>
-          <select id="inputZipCode" class="form-control">
-            <option selected>Choose...</option>
-            <option>Canada</option>
-            <option>India</option>
-            <option>USA</option>
-          </select>
-        </div>
-    
-      <div class="form-group col-sm-3">
-        <label for="inputCity">City</label>
-        <select id="inputCity" class="form-control">
-          <option selected>Choose...</option>
-          <option>Pune</option>
-          <option>Mumbai</option>
-          <option>Nashik</option>
-        </select>
-      </div>    
-    </div>
-    <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Select All
-        </label>
-      </div>
-    </div>
-    
+   
   </div>
-  <div class="btn col-sm-8 ">
-    <button type="button" class="btn btn-primary btn-sm">Save</button>
-    <button type="button" class="btn btn-secondary btn-sm">Next</button>
-  </div>
-
      
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
